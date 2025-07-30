@@ -1,4 +1,4 @@
 data/movies.duckdb
 models/models.duckdb
 data/TMDB_movie_dataset_v11.csv
-
+scripts\__pycache__
