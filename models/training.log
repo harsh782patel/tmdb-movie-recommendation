@@ -921,3 +921,9 @@ Recommendations for 'Edges':
 2025-07-27 14:47:35,196 - model_training - INFO - Successfully loaded 1257935 movies from database
 2025-07-27 14:47:50,118 - model_training - INFO - Data preprocessing complete. Features: ['id', 'title', 'overview', 'genres', 'vote_average', 'vote_count', 'popularity', 'release_date', 'poster_path', 'revenue', 'runtime', 'budget', 'content', 'weighted_rating', 'norm_rating', 'last_updated']
 2025-07-27 14:47:50,122 - model_training - INFO - Training content-based model...
+2025-07-30 18:11:04,404 - model_training - INFO - Movie Recommendation Model Training
+2025-07-30 18:11:04,404 - model_training - INFO - ==================================
+2025-07-30 18:11:04,404 - model_training - INFO - Starting model training process...
+2025-07-30 18:11:06,712 - model_training - INFO - Successfully loaded 1257935 movies from database
+2025-07-30 18:11:20,406 - model_training - INFO - Data preprocessing complete. Features: ['id', 'title', 'overview', 'genres', 'vote_average', 'vote_count', 'popularity', 'release_date', 'poster_path', 'revenue', 'runtime', 'budget', 'content', 'weighted_rating', 'norm_rating', 'last_updated']
+2025-07-30 18:11:20,407 - model_training - INFO - Training content-based model...
