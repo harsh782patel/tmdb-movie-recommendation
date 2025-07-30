@@ -1,0 +1,37 @@
+# Use official Python 3.10 slim image
+FROM python:3.10-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends gcc curl && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install specific DuckDB version first (avoids dependency conflicts)
+RUN pip install --no-cache-dir duckdb==0.8.1
+
+# Copy requirements first to leverage Docker cache
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application files
+COPY pipelines/ /app/pipelines
+COPY scripts/ /app/scripts
+
+# Create directories for data persistence
+RUN mkdir -p /app/data /app/models
+
+# Set environment variables
+ENV PYTHONPATH=/app \
+    DATA_DIR=/app/data \
+    MODEL_DIR=/app/models
+
+# Health check to verify pipeline status
+HEALTHCHECK --interval=30s --timeout=10s \
+    CMD curl -f http://localhost:8501/ || exit 1
+
+# Set entrypoint
+CMD ["python", "pipelines/movie_pipeline.py"]

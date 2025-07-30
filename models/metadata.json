@@ -1,0 +1,29 @@
+{
+  "trained_at": "2025-07-27T08:34:55.341885",
+  "movie_count": 1257935,
+  "min_id": 2,
+  "max_id": 1516510,
+  "min_year": 1800,
+  "max_year": 2030,
+  "genres": [
+    "Documentary",
+    "Western",
+    "Romance",
+    "History",
+    "Fantasy",
+    "Science Fiction",
+    "Family",
+    "Music",
+    "Drama",
+    "Adventure",
+    "Action",
+    "Horror",
+    "War",
+    "TV Movie",
+    "Animation",
+    "Thriller",
+    "Crime",
+    "Mystery",
+    "Comedy"
+  ]
+}

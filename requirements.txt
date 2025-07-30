@@ -1,0 +1,13 @@
+numpy
+scipy
+scikit-learn
+joblib
+pandas
+aiofiles
+duckdb
+streamlit
+requests
+python-dotenv
+prefect
+matplotlib
+schedule
