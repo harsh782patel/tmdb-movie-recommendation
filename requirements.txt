@@ -11,3 +11,4 @@ python-dotenv
 prefect
 matplotlib
 schedule
+seaborn
