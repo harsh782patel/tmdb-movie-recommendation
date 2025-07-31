@@ -124,7 +124,7 @@ Accessible at http://localhost:8501:
 - **System Monitoring** - View dataset stats and model version
 - **Movie Details** - See posters, ratings, and descriptions
 
-https://via.placeholder.com/800x400.png?text=Movie+Recommender+Interface
+![Dashboard Screenshot](dashboard/Screenshot.png)
 *Interactive dashboard showing recommendations and filters*
 
 ## Configuration Options
