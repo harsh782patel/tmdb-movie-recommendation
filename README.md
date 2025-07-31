@@ -33,6 +33,7 @@ docker run -d \
   --env-file .env \
   --name movie-rec \
   movie-recommender
+```
 
 Access dashboard at: http://localhost:8501
 
